@@ -8,10 +8,14 @@ DEBUG = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = env(
     "DJANGO_SECRET_KEY",
+    'ysdl8^7r+($t&=4xt@8ehba8r9_*)$%%$71fp&#ed=ev2eoi9r',
     default="PVvMDuaVNn9ZzcQuWsObVRNuBhivoYhdAXQ7CUNQqaRfcbnJvlNPVuLQvm0iSevU",
+
+
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", ".pythonanywhere.com"]
+
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -56,3 +60,16 @@ INSTALLED_APPS += ["django_extensions"]  # noqa F405
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
