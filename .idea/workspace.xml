@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71adaa02-077d-4e6f-a954-7b1123c194f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reddit/templates/blog/feed_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reddit/templates/blog/feed_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reddit/templates/blog/feed_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/blog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reddit/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reddit/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reddit/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/templates/blog/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reddit/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/templates/blog/post_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,27 +46,8 @@
     <option name="myUseModuleSdk" value="true" />
     <option name="myModuleName" value="reddit" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>postgres</find>
-      <find>pos</find>
-      <find>dat</find>
-      <find>base</find>
-      <find>but</find>
-      <find>glyphicon</find>
-      <find>new</find>
-      <find>Post</find>
-      <find>blog_feed</find>
-      <find>installed</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="28" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
   </component>
   <component name="ProjectId" id="1OUtS12aczc48QsbM5p5gm2eSAX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,7 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reddit/templates/blog" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/djangogirls" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -158,7 +132,7 @@
       <workItem from="1563868348443" duration="7610000" />
       <workItem from="1563887607623" duration="6861000" />
       <workItem from="1563958056770" duration="9566000" />
-      <workItem from="1564044016292" duration="372000" />
+      <workItem from="1564044016292" duration="16505000" />
     </task>
     <servers />
   </component>
