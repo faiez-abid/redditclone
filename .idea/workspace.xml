@@ -4,10 +4,6 @@
     <list default="true" id="71adaa02-077d-4e6f-a954-7b1123c194f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reddit/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/reddit/templates/blog/post_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/djangogirls" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -133,6 +129,8 @@
       <workItem from="1563887607623" duration="6861000" />
       <workItem from="1563958056770" duration="9566000" />
       <workItem from="1564044016292" duration="16505000" />
+      <workItem from="1564390728261" duration="1578000" />
+      <workItem from="1564392327791" duration="1206000" />
     </task>
     <servers />
   </component>
@@ -144,7 +142,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
