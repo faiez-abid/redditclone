@@ -13,8 +13,15 @@ from django.views import generic
 
 class PostView(generic.ListView):
     template_name = 'blog/post_list.html'
-    queryset = Post.objects.all()
     # context_object_name = 'posts'
+
+    def get_queryset(self):
+        return Post.objects.filter(published_date__lte=timezone.now())
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(PostView, self).get_context_data(object_list=object_list, **kwargs)
+        context["tst"] = 77778
+        return context
 
 
 
@@ -40,7 +47,6 @@ class PostNew(generic.CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         form.instance.published_date = timezone.now()
-        print(form.cleaned_data)
         return super(PostNew, self).form_valid(form)
 
 
@@ -59,35 +65,34 @@ class PostNew(generic.CreateView):
 #     return render(request, 'blog/post_edit.html', {'form': form})
 class post_edit(generic.UpdateView):
     model = Post
-    # template_name = 'blog/post_edit.html'
+    template_name = 'blog/post_edit.html'
     form_class = PostForm
+    def get_success_url(self):
+         return reverse_lazy("post_detail", kwargs={"pk": self.kwargs["pk"]})
+    # def __init__(self, **kwargs):
+    #     super().__init__(**kwargs)
+    #     self.object = self.get_object()
 
-    # def get_success_url(self):
-    #     return reverse_lazy("post_detail", kwargs={"pk": self.kwargs["pk"]})
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.object = self.get_object()
+    # def form_valid(self, form):
+    #     self.object = form.save()
+    #     data = {
+    #         'form_is_valid': True,
+    #         'id': form.instance.id,
+    #         'title': form.instance.title,
+    #         'text': form.instance.text
+    #     }
+    #
+    #     return JsonResponse(data)
+    #
+    # def form_invalid(self, form):
+    #     ct = self.get_context_data(form=form)
+    #     form_html = render_to_string('blog/post_edit.html', context=ct, request=self.request)
+    #     return JsonResponse({'html_form': form_html})
 
-    def form_valid(self, form):
-        self.object = form.save()
-        data = {
-            'form_is_valid': True,
-            'id': form.instance.id,
-            'title': form.instance.title,
-            'text': form.instance.text
-        }
-
-        return JsonResponse(data)
-
-    def form_invalid(self, form):
-        ct = self.get_context_data(form=form)
-        form_html = render_to_string('blog/post_edit.html', context=ct, request=self.request)
-        return JsonResponse({'html_form': form_html})
-
-    def get(self, request, *args, **kwargs):
-        ct = self.get_context_data()
-        form_html = render_to_string('blog/post_edit.html', context=ct, request=request)
-        return JsonResponse({'html_form': form_html})
+    # def get(self, request, *args, **kwargs):
+    #     ct = self.get_context_data()
+    #     form_html = render_to_string('blog/post_edit.html', context=ct, request=request)
+    #     return JsonResponse({'html_form': form_html})
 
 
 #

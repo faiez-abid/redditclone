@@ -1,9 +1,15 @@
+from crispy_forms.layout import Submit, Button
 from django import forms
-
+from crispy_forms.helper import FormHelper
 from .models import Post,Feed
 from crispy_forms.helper import FormHelper
 
 class PostForm(forms.ModelForm):
+
+    helper = FormHelper()
+    helper.form_show_labels = False
+    helper.form_class = "post-form"
+    helper.add_input(Submit('submit', 'Save'))
 
     class Meta:
         model = Post
